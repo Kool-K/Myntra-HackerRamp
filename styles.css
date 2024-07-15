@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f8ff; /* Light cyan background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #ff69b4; /* Hot pink */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #ffefd5; /* Papaya whip */
+    border: 2px solid #ff69b4; /* Hot pink border */
+    border-radius: 10px;
+    width: 800px;
+    margin: 100px auto 0 auto;
+    align-items:last baseline;
+}
+
+.left-panel {
+    flex: 1;
+}
+
+.right-panel img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+button {
+    
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.qr-code {
+    display: none; /* Initially hidden */
+    text-align: center;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
